@@ -6,6 +6,10 @@
 
 This project implements an end-to-end human image segmentation pipeline using PyTorch. It trains a model to accurately separate human figures from backgrounds in images, enabling applications like photo editing, virtual try-ons, and AR filters. The code covers data loading, augmentation, training, evaluation, and inference in a Jupyter notebook.
 
+## Live Demo
+Try the deployed app here:  
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://nauman123-coder-human-segmentation-pytorch-efficientnet-4563d0.streamlit.app)
+
 ### What is the Model?
 
 The model is a binary segmentation network that predicts pixel-wise masks for humans (white) vs. background (black). It uses a U-Net architecture, which excels at capturing both local details and global context for precise segmentation.
@@ -31,3 +35,4 @@ Human segmentation is essential for real-world tasks where isolating people from
 * **Optimizer**: Adam with learning rate 0.003.
 * **Training**: 25 epochs, batch size 16, on CUDA (GPU).
 * **Inference**: Sigmoid activation + threshold (0.5) for binary masks.
+
