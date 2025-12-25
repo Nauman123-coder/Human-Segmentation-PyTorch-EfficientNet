@@ -1,7 +1,7 @@
-streamlit 
-torch 
-segmentation_models_pytorch
+streamlit
+torch
+torchvision
+segmentation-models-pytorch
+opencv-python-headless
+pillow
 numpy
-opencv-python
-tqdm
-scikit-learn
