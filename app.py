@@ -37,7 +37,7 @@ class SegmentationModel(torch.nn.Module):
 @st.cache_resource
 def load_model():
     model = SegmentationModel()
-    model.load_state_dict(torch.load('saved_model\best_model.pt', map_location=DEVICE))
+    model.load_state_dict(torch.load('saved_model/best_model.pt', map_location=DEVICE))
     model.to(DEVICE)
     model.eval()
     return model
