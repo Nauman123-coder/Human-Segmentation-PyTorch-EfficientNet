@@ -1,0 +1,7 @@
+streamlit 
+torch 
+segmentation_models_pytorch
+numpy
+opencv-python
+tqdm
+scikit-learn
